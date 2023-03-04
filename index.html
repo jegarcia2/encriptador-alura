@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./logica.js"></script>
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./imagenes/alura.png" alt="Logo Alura" >
+       <nav>
+        <ul>
+        <li>By: José García</li>
+    </ul>
+    </nav>
+
+    </header>
+    <main>
+        
+        <section class="ingresoTexto">
+            <textarea id="texto" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar(document.getElementById('texto'),document.getElementById('salidaTexto'))">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar(document.getElementById('texto'),document.getElementById('salidaTexto'))">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="salidaTexto">
+            <textarea id="salidaTexto" class="mensaje" cols="20" rows="10" placeholder="Salida"></textarea>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
