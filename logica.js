@@ -28,6 +28,13 @@ function btnDesencriptar(textAreaEntrada,textAreaSalida){
     textAreaSalida.value =texto
 }
 
-function btnCopiar(){
-    
+function btnCopiar(textArea){
+    navigator.clipboard.writeText(textArea.value);
+}
+
+function btnCambiar(textAreaEntrada,textAreaSalida){
+var textoEntrada = textAreaEntrada.value;
+var textoSalida = textAreaSalida.value;
+textAreaEntrada.value = textoSalida;
+textAreaSalida.value = textoEntrada;
 }

@@ -14,30 +14,32 @@
 
 <body>
     <header>
-        <img class="logo" src="./imagenes/alura.png" alt="Logo Alura" >
-       <nav>
-        <ul>
-        <li>By: José García</li>
-    </ul>
-    </nav>
+        <a href="https://www.aluracursos.com/"><img class="logo" src="./imagenes/alura3.png" alt="Logo Alura" ></a>
 
+<section class="autor">
+    <h1 class="author">By: <a href="https://www.linkedin.com/in/jos%C3%A9-garc%C3%ADa-villegas-445965210/">José García</a></h1>
+    <img class="linkedin" src="imagenes/linkedin.png">
+</section>
     </header>
     <main>
-        
         <section class="ingresoTexto">
             <textarea id="texto" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
             </div>
+
             <div class="botones">
                 <button class="btn-encriptar" onclick="btnEncriptar(document.getElementById('texto'),document.getElementById('salidaTexto'))">Encriptar</button>
                 <button class="btn-desencriptar" onclick="btnDesencriptar(document.getElementById('texto'),document.getElementById('salidaTexto'))">Desencriptar</button>
             </div>
+            
         </section>
-
-        <section class="salidaTexto">
-            <textarea id="salidaTexto" class="mensaje" cols="20" rows="10" placeholder="Salida"></textarea>
+    
+        <section class="salida-texto">
+            <textarea id="salidaTexto" class="mensaje" cols="20" rows="10" placeholder="Salida de texto"></textarea>
             <div>
-                <button class="copiar" onclick="copiar()">Copiar</button>
+                <button class="btn-copiar" onclick="btnCopiar(document.getElementById('salidaTexto'))">Copiar</button>
+                <button class="btn-cambiar" onclick="btnCambiar(document.getElementById('texto'),document.getElementById('salidaTexto'))">a</button>
             </div>
         </section>
     </main>
